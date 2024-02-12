@@ -35,6 +35,10 @@
  *
  * Advanced settings can be found in Configuration_adv.h
  */
+
+/* Include macros.h for proper LSP support */
+#include "src/core/macros.h"
+
 #define CONFIGURATION_H_VERSION 02010300
 
 //===========================================================================

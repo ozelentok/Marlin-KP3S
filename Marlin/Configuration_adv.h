@@ -30,6 +30,10 @@
  *
  * Basic settings can be found in Configuration.h
  */
+
+/* Include macros.h for proper LSP support */
+#include "src/core/macros.h"
+
 #define CONFIGURATION_ADV_H_VERSION 02010300
 
 // @section develop
