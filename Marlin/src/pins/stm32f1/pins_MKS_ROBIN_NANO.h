@@ -49,3 +49,19 @@
 #if HAS_TFT_LVGL_UI && FAN1_PIN != PB0 && HEATER_1_PIN != PB0
   #define BOARD_INIT() OUT_WRITE(PB0, LOW)
 #endif
+
+#if HAS_TMC_UART
+  #define X_SERIAL_TX_PIN                    PA5
+  #define X_SERIAL_RX_PIN        X_SERIAL_TX_PIN
+
+  #define Y_SERIAL_TX_PIN                   PC13
+  #define Y_SERIAL_RX_PIN        Y_SERIAL_TX_PIN
+
+  #define Z_SERIAL_TX_PIN                    PC7
+  #define Z_SERIAL_RX_PIN        Z_SERIAL_TX_PIN
+
+  #ifndef TMC_BAUD_RATE
+    #define TMC_BAUD_RATE                  19200
+  #endif
+
+#endif
